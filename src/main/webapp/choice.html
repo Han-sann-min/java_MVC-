@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+    /* 체크박스를 한 줄에 표시하기 위한 CSS 스타일 */
+    .chbox {
+        display: inline; /* 체크박스를 인라인 블록으로 표시하여 한 줄에 표시 */
+        margin-right: 10px; /* 각 체크박스 사이의 간격 조절 (원하는 만큼 조정) */
+    }
+</style>
+</head>
+<body>
+오늘 무엇을 타고 오셨나요?
+	<form action="rideto" method="GET">
+        <label>
+            <input type="checkbox" name="Vehicle" value="bike" class="chbox"> 자전거
+        </label>
+        <br>
+        <label>
+            <input type="checkbox" name="Vehicle" value="bus" class="chbox"> 버스
+        </label>
+        <br>
+        <label>
+            <input type="checkbox" name="Vehicle" value="taxi" class="chbox"> 택시
+        </label>
+        <br>
+        <input type="submit" value="제출">
+    </form>
+</body>
+</html>
